@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'KoHo', sans-serif;
+}
+
+body{
+    background-color: #047ed1;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 20px;
+}
+
+.btn-back{
+    margin: 0px 15px 0px 0px;
+}
+
+.contact-form{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: azure;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    /* flex-direction: row; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+
+.text{
+    text-align: center;
+    color: black;
+    display: inline;
+}
+
+form{
+    margin-right: 15px;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+    width: 48;
+}
+
+.input-fields .input option {
+    color: black;
+}
+
+.input-fields .input,
+.msg textarea{
+    margin: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #047ed1;
+    padding: 10px;
+    color: black;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+    text-align: left;
+}
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
+
+

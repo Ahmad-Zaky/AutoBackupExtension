@@ -1,0 +1,4 @@
+<Files "backup.service">  
+  Order Allow,Deny
+  Deny from all
+</Files>
