@@ -18,7 +18,7 @@ function vRedirect($baseURL, $delay = '0') {
  * because there is another function with the same name.
  */
 function _autobackup_detect_run_in_cli() {
-	return (!isset($_SERVER['SERVER_SOFTWARE']) && (php_sapi_name() == 'cli' ||  is_numeric($_SERVER['argc']) && $_SERVER['argc'] > 0));
+    return (!isset($_SERVER['SERVER_SOFTWARE']) && (php_sapi_name() == 'cli' ||  is_numeric($_SERVER['argc']) && $_SERVER['argc'] > 0));
 }
 
 // Skip this Validation on Cron Task
@@ -54,6 +54,3 @@ if (!_autobackup_detect_run_in_cli()) {
 
     chdir($backup_dir);
 }
-/**
- * END vTiger Content
- */
